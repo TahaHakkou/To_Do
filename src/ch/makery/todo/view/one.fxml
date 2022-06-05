@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.todo.view.oneController">
+   <children>
+      <AnchorPane fx:id="SettingPanel" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #a5becc;">
+         <children>
+            <Button fx:id="SaveBtn" layoutX="404.0" layoutY="438.0" mnemonicParsing="false" onAction="#Save" prefHeight="31.0" prefWidth="224.0" styleClass="save-btn" stylesheets="@application.css" text="Save" />
+            <ComboBox fx:id="pmcb" layoutX="306.0" layoutY="321.0" prefHeight="31.0" prefWidth="159.0" />
+            <ComboBox fx:id="bmcb" layoutX="565.0" layoutY="324.0" prefWidth="150.0" />
+            <Text fill="#7d1e6a" layoutX="330.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pomodoro" wrappingWidth="111.67089496552944">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#7d1e6a" layoutX="598.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Break" wrappingWidth="84.67089496552944">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#7d1e6a" layoutX="284.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pomodoro Settings" wrappingWidth="232.0">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="PomPanel" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fef9a7;">
+         <children>
+            <Button fx:id="SettingsBtn" layoutX="306.0" layoutY="442.0" mnemonicParsing="false" onAction="#Settings" prefHeight="31.0" prefWidth="150.0" styleClass="toggle-btn" stylesheets="@application.css" text="Settings" />
+            <Button fx:id="StartBtn" layoutX="530.0" layoutY="442.0" mnemonicParsing="false" onAction="#Start" prefHeight="31.0" prefWidth="159.0" styleClass="toggle-btn" stylesheets="@application.css" text="Start" />
+            <Button fx:id="PomodoroBtn" layoutX="338.0" layoutY="229.0" mnemonicParsing="false" onAction="#Pomodoro" stylesheets="@application.css" text="pomodoro">
+               <styleClass>
+                  <String fx:value="mode-btn" />
+                  <String fx:value="highlight-btn" />
+               </styleClass>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="BreakBtn" layoutX="539.0" layoutY="227.0" mnemonicParsing="false" onAction="#Break" prefHeight="31.0" prefWidth="119.0" styleClass="mode-btn" stylesheets="@application.css" text="break">
+               <font>
+                  <Font name="Bell MT Bold" size="26.0" />
+               </font>
+            </Button>
+            <Pane layoutX="306.0" layoutY="300.0" prefHeight="103.0" prefWidth="366.0">
+               <children>
+                  <Text fx:id="MinuteText" layoutX="44.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25" wrappingWidth="111.6709053516388">
+                     <font>
+                        <Font name="Bell MT Italic" size="86.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="SecondeText" layoutX="264.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="Bodoni MT Italic" size="80.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text layoutX="400.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pomodoro">
+               <font>
+                  <Font name="System Italic" size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="600.0" prefWidth="232.0" style="-fx-background-color: #EC6D51;">
+         <children>
+            <Pane prefHeight="136.0" prefWidth="232.0">
+               <children>
+                  <ImageView fitHeight="116.0" fitWidth="148.0" layoutX="58.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/to-do-list.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="todo_btn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#ToDoAction" prefHeight="94.0" prefWidth="232.0" style="-fx-font-size: 20;" stylesheets="@main.css" text="To Do list">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/list.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="pomodoro_btn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#ToDoAction" prefHeight="94.0" prefWidth="232.0" style="-fx-font-size: 20; -fx-background-color: #70ca47;" stylesheets="@main.css" text="Pomodoro">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/clock.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="flash_cards_btn" graphicTextGap="10.0" mnemonicParsing="false" onAction="#flashCardsAction" prefHeight="94.0" prefWidth="232.0" style="-fx-font-size: 20;" stylesheets="@main.css" text="Flash Cards">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/flash-card.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="logout_btn" graphicTextGap="10.0" layoutX="10.0" layoutY="334.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="94.0" prefWidth="232.0" style="-fx-font-size: 20;" stylesheets="@main.css" text="Log out">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+   </children>
+</AnchorPane>

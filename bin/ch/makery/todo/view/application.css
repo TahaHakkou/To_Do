@@ -1,0 +1,32 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+.mode-btn {
+    -fx-background-color: none;
+    -fx-border-width: 1px;
+    -fx-border-color: transparent;
+}
+
+.highlight-btn {
+    -fx-border-width: 1px;
+    -fx-border-color: #ffffff;
+    -fx-border-style: dashed;
+    -fx-border-radius: 2px;
+}
+.toggle-btn,
+.save-btn {
+    -fx-font-size: 18px;
+    -fx-background-color: #fac213;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 2px;
+}
+.pom{
+	-fx-background-color: #ffb38a;
+}
+.break{
+	-fx-background-color:  #4c9195;
+}
+.toggle-btn:hover,
+.save-btn:hover {
+    -fx-opacity: 0.8;
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.todo.view.TaskSceneController">
+   <children>
+      <Pane layoutY="-2.0" prefHeight="606.0" prefWidth="232.0" style="-fx-background-color: #EC6D51;">
+         <children>
+            <Pane layoutX="16.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/to-do-list.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <VBox layoutX="333.0" layoutY="50.0" prefHeight="450.0" prefWidth="456.0" spacing="30.0">
+         <children>
+            <TextField fx:id="tf_taskName" prefHeight="25.0" prefWidth="317.0" promptText="Task Name" />
+            <DatePicker fx:id="dateTask" prefHeight="25.0" prefWidth="454.0" promptText="Pick a date" />
+            <TextField fx:id="tf_taskDescription" prefHeight="25.0" prefWidth="317.0" promptText="Description" />
+            <TextField fx:id="tf_taskDetails" prefHeight="115.0" prefWidth="339.0" promptText="Details" />
+            <Pane prefHeight="156.0" prefWidth="339.0">
+               <children>
+                  <Label layoutX="88.0" layoutY="29.0" text="Hour">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="297.0" layoutY="29.0" text="Minute">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_hour" layoutX="33.0" layoutY="78.0" />
+                  <TextField fx:id="tf_minutes" layoutX="250.0" layoutY="78.0" />
+               </children>
+            </Pane>
+            <ChoiceBox fx:id="cb_category" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <Button fx:id="createTask" layoutX="678.0" layoutY="511.0" mnemonicParsing="false" onAction="#createBtnHandler" text="Create">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelTask" layoutX="553.0" layoutY="511.0" mnemonicParsing="false" onAction="#cancelBtnHandler" text="Cancel">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="275.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/task_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="275.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/document_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="275.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/maintenance_date_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="275.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/activity_history_30px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="275.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/clock%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="275.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/category.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

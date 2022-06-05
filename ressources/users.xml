@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Users>
+    <user>
+        <email>user@gmail.com</email>
+        <password>1234</password>
+        <phone>1234</phone>
+        <userName>USER</userName>
+    </user>
+    <user>
+        <email>omar@gmail.com</email>
+        <password>1234</password>
+        <phone>1234</phone>
+        <userName>omar</userName>
+    </user>
+    <user>
+        <email>user2@gmail.com</email>
+        <password>1234</password>
+        <phone>1234</phone>
+        <userName>user2</userName>
+    </user>
+    <user>
+        <email>test@gmail.com</email>
+        <password>1234</password>
+        <phone>1234</phone>
+        <userName>test</userName>
+    </user>
+    <user>
+        <email>mof@fkr.ujoj</email>
+        <password>AAAZZZEEE</password>
+        <phone>009888</phone>
+        <userName>mode </userName>
+    </user>
+    <user>
+        <email>ml@g.fl</email>
+        <password>AKAMI</password>
+        <phone>00998</phone>
+        <userName>ml</userName>
+    </user>
+</Users>
